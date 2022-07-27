@@ -1,7 +1,7 @@
 resource "aws_security_group" "my_sql_server" {
   name        = "mysql-server-sg"
   description = "Allow connection to the MySQL RDS server"
-  vpc_id      = data.aws_vpc.talentacademy.id
+  vpc_id      = data.aws_vpc.lab-vpc.id
 
   ingress {
     description      = "Allow port 3306"

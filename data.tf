@@ -1,4 +1,4 @@
-data "aws_vpc" "talentacademy" {
+data "aws_vpc" "lab-vpc" {
   filter {
     name   = "tag:Name"
     values = ["lab-vpc"]
